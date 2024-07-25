@@ -20,7 +20,9 @@ def calculate_demographic_data(print_data=True):
     # with and without `Bachelors`, `Masters`, or `Doctorate`
     SalaryofHigherEduPeople = df[(df['education'] == 'Bachelors') | (df['education'] == 'Masters') | (df['education'] == 'Doctorate')]['salary']
     higher_education = SalaryofHigherEduPeople.count()
-    lower_education = None
+    
+    SalaryofLowerEduPeople = df[(df['education'] != 'Bachelors') & (df['education'] != 'Masters') & (df['education'] != 'Doctorate')]['salary']
+    lower_education = SalaryofLowerEduPeople.count()
 
     # percentage with salary >50K
     higher_education_rich = None
