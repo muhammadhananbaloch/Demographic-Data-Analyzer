@@ -42,6 +42,7 @@ def calculate_demographic_data(print_data=True):
     rich_percentage  = minHourWorker50K.count() * 100 / num_min_workers.count()
 
     # What country has the highest percentage of people that earn >50K?
+    totalPeoplePerCountry = df['native-country'].value_counts()
     highest_earning_country = None
     highest_earning_country_percentage = None
 
