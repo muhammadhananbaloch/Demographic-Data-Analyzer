@@ -47,8 +47,7 @@ def calculate_demographic_data(print_data=True):
     highEarnerPerCountry = highEarners['native-country'].value_counts()
     percentageHighEarnersPerCountry = highEarnerPerCountry * 100 / totalPeoplePerCountry
     highest_earning_country = percentageHighEarnersPerCountry.idxmax()
-    highest_earning_country = None
-    highest_earning_country_percentage = None
+    highest_earning_country_percentage = percentageHighEarnersPerCountry.max()
 
     # Identify the most popular occupation for those who earn >50K in India.
     top_IN_occupation = None
