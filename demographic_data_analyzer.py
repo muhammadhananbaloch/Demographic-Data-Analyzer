@@ -45,6 +45,7 @@ def calculate_demographic_data(print_data=True):
     totalPeoplePerCountry = df['native-country'].value_counts()
     highEarners = df[df['salary'] == '>50K']
     highEarnerPerCountry = highEarners['native-country'].value_counts()
+    percentageHighEarnersPerCountry = highEarnerPerCountry * 100 / totalPeoplePerCountry
     highest_earning_country = None
     highest_earning_country_percentage = None
 
