@@ -28,6 +28,9 @@ def calculate_demographic_data(print_data=True):
     HigherEducationRich = SalaryofHigherEduPeople[SalaryofHigherEduPeople == '>50K']
     NoOfHigherEducationRich = HigherEducationRich.count()
     higher_education_rich = (NoOfHigherEducationRich * 100 / higher_education).round(1)
+
+    LowerEducationRich = SalaryofLowerEduPeople[SalaryofLowerEduPeople == '>50K']
+    NoOfLowerEducationRich = LowerEducationRich.count()
     lower_education_rich = None
 
     # What is the minimum number of hours a person works per week (hours-per-week feature)?
