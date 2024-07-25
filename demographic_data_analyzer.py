@@ -9,10 +9,10 @@ def calculate_demographic_data(print_data=True):
     race_count = df["race"].value_counts()
 
     # What is the average age of men?
-    average_age_men = df[df['sex'] == 'Male']['age'].mean()
+    average_age_men = (df[df['sex'] == 'Male']['age'].mean()).round(1)
 
     # What is the percentage of people who have a Bachelor's degree?
-    percentage_bachelors = (df[df['education'] == 'Bachelors']['education'].count()) * (100) / (df['education'].count()) 
+    percentage_bachelors = ((df[df['education'] == 'Bachelors']['education'].count()) * (100) / (df['education'].count())).round(1)
 
     # What percentage of people with advanced education (`Bachelors`, `Masters`, or `Doctorate`) make more than 50K?
     # What percentage of people without advanced education make more than 50K?
@@ -68,3 +68,4 @@ def calculate_demographic_data(print_data=True):
         'top_IN_occupation': top_IN_occupation
     }
 # df = pd.read_csv('adult.data.csv')
+# calculate_demographic_data()
