@@ -14,9 +14,9 @@ This project is part of the Data Analysis with Python certification by freeCodeC
 9. Identify the most popular occupation for those earning >50K in India.
 
 ### Development:
-- Implement the analysis in `demographic_data_analyzer.py`.
-- Use `main.py` for testing your code during development.
-- Ensure all calculations and code replace the placeholder `None` values.
+- Implemented the analysis in `demographic_data_analyzer.py`.
+- Used `main.py` for testing my code during development.
+- Ensured all calculations and code replaced the placeholder `None` values.
 
 ### Testing:
 - Unit tests are available in `test_module.py`.
