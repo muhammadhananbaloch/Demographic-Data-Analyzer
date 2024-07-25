@@ -25,6 +25,8 @@ def calculate_demographic_data(print_data=True):
     lower_education = SalaryofLowerEduPeople.count()
 
     # percentage with salary >50K
+    HigherEducationRich = SalaryofHigherEduPeople[SalaryofHigherEduPeople == '>50K']
+    NoOfHigherEducationRich = HigherEducationRich.count()
     higher_education_rich = None
     lower_education_rich = None
 
